@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  apache:
+    image: httpd:latest
+    container_name: my-apache-app
+    ports:
+    - '8080:80'
+    volumes:
+    - ./js-developer-pokedex-main:/usr/local/apache2/htdocs
